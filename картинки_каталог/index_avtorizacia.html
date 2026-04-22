@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="stylemein.css">
+</head>
+<body class="body1">
+
+<div class="box1">
+  
+    <div class="nav-links">
+        <a href="#" class="nav-link active" id="signinTab">Вход</a>
+        <a href="#" class="nav-link" id="signupTab">Регистрация</a>
+    </div>
+
+
+    <form id="signinForm">
+        <div class="form-label">Username</div>
+        <input class="user" type="text" placeholder="Введите логин" required>
+
+        <div class="form-label">Password</div>
+        <input class="pass" type="password" placeholder="Пароль 6–8 символов" minlength="6" maxlength="8" required>
+
+        <div class="keep-wrapper">
+            <input class="keep" type="checkbox" id="keepSigned">
+            <label for="keepSigned" class="keep-label">Я согласен с условиями</label>
+        </div>
+
+        <input class="signin-btn" type="submit" value="Войти">
+    </form>
+
+ 
+    <form id="signupForm" style="display: none;">
+        <div class="form-label">Username</div>
+        <input class="user" type="text" placeholder="Придумайте логин" required>
+
+        <div class="form-label">Email</div>
+        <input class="user" type="email" placeholder="example@mail.ru" required>
+
+        <div class="form-label">Password</div>
+        <input class="pass" type="password" placeholder="Пароль 6–8 символов" minlength="6" maxlength="8" required>
+
+        <div class="keep-wrapper">
+            <input class="keep" type="checkbox" id="agreeTerms">
+            <label for="agreeTerms" class="keep-label">Я согласен с условиями</label>
+        </div>
+
+        <input class="signin-btn" type="submit" value="Зарегистрироваться">
+    </form>
+
+    <hr>
+
+    <a href="#" class="forgot-link" id="forgotPassword">Forgot Password?</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
